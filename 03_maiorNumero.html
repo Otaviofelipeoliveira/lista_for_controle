@@ -7,11 +7,19 @@
     */
 
     //ENTRADA
-
+let lista =[];
     
+for(let i = 1; i<= 5; i++){
+    lista.push(Number(prompt("informe um numero")));
+}
     //PROCESSAMENTO
-
+    let final = 0;
+for(let numero of lista){
+    if(numero > final){
+        final = numero;
+    }
+}
     
     //SAÍDA
-
+alert(`o maior numero detre os que você infortmou é \n ${final}`)
 </script>

@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-    
-
+   
+    const notasDoaluno = Number(prompt("quantas notas o aluno obteve?"));
     //PROCESSAMENTO
-    
+     let media = 0;
+     for(let i = 1; i <= notasDoaluno; i++ ){
+        media = media + Number(prompt(`insira a ${i}º notas do aluno`));
+    };
+    media = media / notasDoaluno
 
     //SAÍDA
-
+alert(`as nmedia do aluno são ${media.toFixed(1)}.`);
 </script>

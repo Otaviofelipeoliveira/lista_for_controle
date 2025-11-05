@@ -10,11 +10,19 @@
     */
 
     //ENTRADA
-
+let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
     
-    //PROCESSAMENTO
+let ordem = [];
 
+    //PROCESSAMENTO
+for(let i = 0; i < listaDeLetras.length; i++){
+    let minusculas = listaDeLetras[i].toLowerCase();
+    if(!ordem.includes(minusculas)){
+        ordem.push(minusculas);
+
+    }
+}
     
     //SAÍDA
-
+alert(`as letras minúculas são: ${ordem.sort()}`)
 </script>
